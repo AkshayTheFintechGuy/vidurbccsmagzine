@@ -9,7 +9,6 @@ import { FaProjectDiagram, FaCertificate, FaCogs, FaFileInvoiceDollar } from "re
 
 
 
-
 export default function Home() {
   return (
     <>
