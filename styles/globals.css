@@ -1,0 +1,27 @@
+:root {
+  --accent: #0E4D92;
+  --bg: #fafafa;
+  --text: #0f172a;
+  --muted: #6b7280;
+  --radius: 12px;
+  --container: 1100px;
+  --font: 'Inter', system-ui, sans-serif;
+}
+
+body {
+  font-family: var(--font);
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+}
+
+.container {
+  max-width: var(--container);
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
