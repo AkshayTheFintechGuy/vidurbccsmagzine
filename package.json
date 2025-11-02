@@ -2,12 +2,15 @@
   "name": "vidur-lite",
   "version": "0.1.0",
   "private": true,
-  "scripts": {
-    "dev": "next dev --webpack",
-    "build": "next build --webpack",
-    "start": "next start",
-    "postbuild": "next-sitemap"
-  },
+"scripts": {
+  "dev": "next dev --webpack",
+  "build": "next build --webpack",
+  "start": "next start",
+
+  "postbuild": "next-sitemap && node merge-sitemap.js"
+},
+
+  
 
   "dependencies": {
     "gray-matter": "^4.0.3",
