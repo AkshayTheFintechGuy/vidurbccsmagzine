@@ -1,11 +1,10 @@
 ---
-title: "Beth Ward Studios – ERP Migration & Financial Automation"
-date: "2025-10-15"
-summary: "Successful migration from QuickBooks Desktop to Microsoft Dynamics 365 Business Central, enabling unified financial visibility and automated reporting."
-impact: "Reduced manual reporting time by 80% and improved financial accuracy through real-time data integration."
-tech: ["Dynamics 365 Business Central", "Power BI", "Excel Automation", "Financial Reporting"]
+title: "Purchase-to-Pay (P2P) Automation – Streamlining Procurement to Payment"
+date: "2025-11-01"
+summary: "A detailed overview of the Purchase-to-Pay (P2P) process — integrating purchasing, vendor management, and payment automation within ERP systems."
+impact: "Improved cash-flow visibility, reduced manual invoice handling, and 90% faster vendor payment processing."
+tech: ["Dynamics 365 Business Central", "Power BI", "Vendor Portal", "Banking API", "Automation Workflow"]
 ---
-
 
 # 🧾 Understanding the Purchase-to-Pay (P2P) Process
 
