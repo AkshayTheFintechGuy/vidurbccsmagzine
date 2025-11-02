@@ -1,9 +1,4 @@
-# *
 User-agent: *
 Allow: /
 
-# Host
-Host: https://vidurbccsmagzine.vercel.app
-
-# Sitemaps
 Sitemap: https://vidurbccsmagzine.vercel.app/sitemap.xml
