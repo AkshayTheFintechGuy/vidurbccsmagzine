@@ -7,7 +7,8 @@ summary: "Understand how Microsoft Power BI empowers businesses to visualize, an
 
 # 📊 Power BI: Turning Data into Decisions
 
-![Power BI Dashboard](https://unsplash.com/photos/young-couple-laughing-outdoors-on-a-sunny-day-qXe3Pw5sZvE)
+![Power BI Dashboard](https://upload.wikimedia.org/wikipedia/commons/c/cf/Microsoft_Power_BI_logo.svg)
+
 
 ## 🌟 What is Power BI?
 
