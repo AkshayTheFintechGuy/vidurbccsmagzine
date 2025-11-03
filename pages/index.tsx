@@ -92,10 +92,17 @@ export default function Home() {
       },
           {
         name: "Chandrakesh Singh Rathore",
-        role: "Sr. Marketing executive",
+        role: "CTO At Stratergic Alliance",
         bio: "Currently serving as a Dynamics Practice Head, I bring a decade of hands-on experience in project leadership, functional consulting, and solution architecture. My strengths include",
         photoUrl: "https://media.licdn.com/dms/image/v2/D4D03AQGhU5eWf3rCZw/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1685967481630?e=1763596800&v=beta&t=QJpvuJewWxRjyUSpkY4mbGXW8bOIR_iEFedpluHmTtM",
         linkedin: "https://www.linkedin.com/in/chandrakesh-singh-rathore/",
+      },
+                {
+        name: "Shivaji Kapse",
+        role: "General Manager at AGSA SPRINGS PVT LTD",
+        bio: "Working as General Manager at AGSA Springs Private Limited. Have experiance in Industrial machine. I help business choose right machine at right work",
+        photoUrl: "https://media.licdn.com/dms/image/v2/D4D03AQE5DHS-pa30Kg/profile-displayphoto-shrink_400_400/B4DZS929XpHkAg-/0/1738352090353?e=1763596800&v=beta&t=Jwk2Odb8lzeIyhcFd5j72wT2G8a8fuyrZ6KPbgV-5Hs",
+        linkedin: "https://www.linkedin.com/in/shivaji-kapse-94a79932b/",
       },
     ]}
   />
