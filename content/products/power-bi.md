@@ -7,7 +7,7 @@ summary: "Explore Microsoft Power BI — a leading business intelligence platfor
 
 # 📊 **Everything You Need to Know About Microsoft Power BI**
 
-![Power BI Dashboard Banner](https://via.placeholder.com/1200x400?text=Microsoft+Power+BI+Analytics+Platform)
+![Power BI Dashboard Banner]("https://www.neenopal.com/PowerBI_Screenshot_Automation.html")
 
 ## 🧠 **What Is Microsoft Power BI?**
 
