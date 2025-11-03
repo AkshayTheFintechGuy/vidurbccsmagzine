@@ -75,11 +75,14 @@ Considers only **variable costs** in product costing (materials, labor, etc.).
 
 The cost flow in a manufacturing environment typically follows this path:
 
+
+
 ```mermaid
 flowchart LR
     A[Raw Material Purchase] --> B[Material Requisition]
     B --> C[Production Process]
-    C --> D[Work in Progress (WIP)]
+    C --> D["Work in Progress"]
     D --> E[Finished Goods]
     E --> F[Sales]
-    F --> G[Cost of Goods Sold (COGS)]
+    F --> G[Cost of Goods Sold]
+```
