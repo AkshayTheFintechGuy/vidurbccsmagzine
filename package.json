@@ -2,20 +2,16 @@
   "name": "vidur-lite",
   "version": "0.1.0",
   "private": true,
-"scripts": {
-  "dev": "next dev --webpack",
-  "build": "next build --webpack",
-  "start": "next start",
-
-  "postbuild": "next-sitemap && node merge-sitemap.js"
-},
-
-  
-
+  "scripts": {
+    "dev": "next dev --webpack",
+    "build": "next build --webpack",
+    "start": "next start",
+    "postbuild": "next-sitemap && node merge-sitemap.js"
+  },
   "dependencies": {
     "gray-matter": "^4.0.3",
     "marked": "^16.4.1",
-    "next": "16.0.1",
+    "next": "16.0.10",
     "next-sitemap": "^4.2.3",
     "react": "19.2.0",
     "react-dom": "19.2.0",
@@ -27,6 +23,4 @@
     "@types/react-dom": "^19",
     "typescript": "^5"
   }
-  
 }
-
