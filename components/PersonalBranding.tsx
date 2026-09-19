@@ -10,6 +10,7 @@ interface PersonalBrandingProps {
   linkedin?: string;
   github?: string;
   website?: string;
+  organizationLink?: string;
 }
 
 export default function PersonalBranding({
@@ -21,6 +22,7 @@ export default function PersonalBranding({
   linkedin,
   github,
   website,
+  organizationLink,
 }: PersonalBrandingProps) {
   return (
     <section
@@ -83,8 +85,16 @@ export default function PersonalBranding({
         </p>
 
         <p style={{ color: "#6b7280", fontSize: "0.95rem" }}>
-          Currently building at{" "}
-          <strong style={{ color: "#0E4D92" }}>{organization}</strong>.
+          Currently working as{" "}
+          <strong style={{ color: "#0E4D92" }}>
+            {organizationLink ? (
+              <a href={organizationLink} target="_blank" rel="noopener noreferrer">
+                {organization}
+              </a>
+            ) : (
+              organization
+            )}
+          </strong>.
         </p>
 
         <p style={{ color: "#6b7280", fontSize: "0.95rem" }}>

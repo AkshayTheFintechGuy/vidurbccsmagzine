@@ -46,7 +46,7 @@ export default function LearnPage({
     <>
       <Navbar />
       <PageHeader
-        title="Learn with Vidur"
+        title="Learn with Akshay"
         subtitle="Online courses and tutorials on Business, Technology & Finance."
       />
 
