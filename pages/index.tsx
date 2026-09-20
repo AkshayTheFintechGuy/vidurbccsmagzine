@@ -57,13 +57,200 @@ export default function Home() {
         <meta property="og:title" content="Akshay Gatkal | Finance, ERP, AI & Automation" />
         <meta property="og:description" content="Projects, notes and ideas from Akshay Gatkal." />
         <meta property="og:type" content="website" />
+        <style>{`
+          html, body { overflow-x: hidden; }
+
+          .hero-grid > section {
+            width: 100%;
+            box-sizing: border-box;
+            padding: 1.5rem !important;
+            flex-direction: column !important;
+            gap: 1.25rem !important;
+          }
+
+          .hero-grid > section > div {
+            flex: none !important;
+            width: 100% !important;
+            min-width: 0 !important;
+          }
+
+          .hero-grid > section img {
+            width: 150px !important;
+            height: 150px !important;
+          }
+
+          .hero-grid > section h2,
+          .hero-grid > section p,
+          .hero-grid > section a {
+            overflow-wrap: anywhere;
+          }
+
+          @media (max-width: 760px) {
+            .hero-grid {
+              display: block !important;
+              grid-template-columns: 1fr !important;
+            }
+
+            .hero-grid > section {
+              margin-top: 2.5rem !important;
+              padding: 2rem 1rem !important;
+            }
+
+            .hero-grid > section img {
+              width: min(190px, 65vw) !important;
+              height: min(190px, 65vw) !important;
+            }
+
+            .about-grid {
+              display: block !important;
+            }
+
+            .about-grid > div,
+            .about-grid > section {
+              width: 100% !important;
+              max-width: 100% !important;
+              min-width: 0 !important;
+              box-sizing: border-box;
+            }
+
+            .about-grid > section {
+              display: flex !important;
+              flex-direction: column !important;
+              align-items: center !important;
+              padding: 2rem 1rem !important;
+              margin-top: 2rem !important;
+              gap: 1.5rem !important;
+              overflow: hidden;
+            }
+
+            .about-grid > section > div {
+              flex: none !important;
+              width: 100% !important;
+              min-width: 0 !important;
+            }
+
+            .about-grid > section img {
+              width: min(220px, 70vw) !important;
+              height: min(220px, 70vw) !important;
+            }
+
+            .about-grid > section h2,
+            .about-grid > section p,
+            .about-grid > section a {
+              max-width: 100%;
+              overflow-wrap: anywhere;
+            }
+
+            .about-grid > section > div:last-child {
+              text-align: center !important;
+            }
+
+            .about-grid > section > div:last-child > div:last-child {
+              justify-content: center;
+              flex-wrap: wrap;
+            }
+          }
+
+          @media (max-width: 760px) {
+            header {
+              position: sticky !important;
+              top: 0;
+              padding: .65rem 0 !important;
+            }
+
+            header nav.container {
+              display: grid !important;
+              grid-template-columns: minmax(0, 1fr) auto;
+              gap: .55rem .75rem;
+              padding: 0 .75rem !important;
+              max-width: none !important;
+            }
+
+            header nav.container > a {
+              white-space: nowrap;
+              font-size: .95rem !important;
+            }
+
+            header nav.container > div {
+              grid-column: 1 / -1;
+              display: flex !important;
+              justify-content: space-between;
+              gap: .35rem !important;
+              width: 100%;
+            }
+
+            header nav.container > div a {
+              font-size: .76rem;
+              white-space: nowrap;
+            }
+
+            header nav.container > div a:last-child {
+              padding: 5px 9px !important;
+            }
+
+            main .container {
+              max-width: none;
+              padding-left: 1rem;
+              padding-right: 1rem;
+            }
+
+            section[style*="padding: 5.5rem"] {
+              padding: 3.5rem 1rem 3rem !important;
+            }
+
+            section[style*="padding: 5.5rem"] > .container {
+              display: block !important;
+              grid-template-columns: 1fr !important;
+            }
+
+            section[style*="padding: 5.5rem"] > .container > div:first-child {
+              min-width: 0;
+              width: 100%;
+              padding-right: 0;
+            }
+
+            section[style*="padding: 5.5rem"] h1 {
+              font-size: clamp(2.75rem, 15vw, 4rem) !important;
+              overflow-wrap: anywhere;
+            }
+
+            section[style*="padding: 5.5rem"] p {
+              max-width: 100%;
+            }
+
+
+            [style*="grid-template-columns: minmax(0, 1fr) minmax(300px"] {
+              grid-template-columns: 1fr !important;
+            }
+
+            [style*="grid-template-columns: repeat(auto-fit"] {
+              grid-template-columns: 1fr !important;
+            }
+
+            [style*="grid-template-columns: repeat(auto-fit, minmax(280px"] {
+              grid-template-columns: 1fr !important;
+            }
+
+            [style*="grid-template-columns: repeat(auto-fit, minmax(260px"] {
+              grid-template-columns: 1fr !important;
+            }
+
+            [style*="grid-template-columns: repeat(auto-fit, minmax(210px"] {
+              grid-template-columns: 1fr !important;
+            }
+
+            [style*="padding: 5rem 1rem"] {
+              padding: 3.5rem 1rem !important;
+            }
+          }
+        `}</style>
       </Head>
 
       <Navbar />
 
       <main>
         <section style={heroSection}>
-          <div className="container" style={heroGrid}>
+          <div className="container hero-grid" style={heroGrid}>
             <div>
               <p style={eyebrowStyle}>Finance • ERP • AI • Automation</p>
               <h1 style={heroHeading}>Akshay Gatkal</h1>
@@ -78,13 +265,17 @@ export default function Home() {
               </div>
               <p style={locationLine}>Based in Pune • Building, consulting and learning in public.</p>
             </div>
-
-            <div style={heroPanel}>
-              <p style={panelLabel}>A personal workspace</p>
-              <p style={panelStatement}>Projects, explanations and observations from the space between finance and technology.</p>
-              <div style={panelRule} />
-              <p style={panelMeta}>Business systems<br />Automation & AI<br />Writing & learning</p>
-            </div>
+            <PersonalBranding
+              name="Akshay Gatkal"
+              tagline="I work at the intersection of Finance, ERP, AI & Automation."
+              organization="Sr. Business Analyst at Advaiya Solutions, Inc."
+              organizationLink="https://www.linkedin.com/company/advaiya-inc/posts/?feedView=all"
+              email="akshaytax2014@gmail.com"
+              photoUrl="https://media.licdn.com/dms/image/v2/D4D35AQGMXgO4FLuqpw/profile-framedphoto-shrink_400_400/B4DaC6jlxoHsAY-/0/1789836287568?e=1790442000&v=beta&t=kVijMSx10niHuV-l-VUG8ojtL-LhYioLV5Xhlw1fqaE"
+              linkedin="https://www.linkedin.com/in/akshaygatkal/"
+              github="https://github.com/akshaygatkal"
+              website="https://marathifinancial.com"
+            />
           </div>
         </section>
 
@@ -130,7 +321,7 @@ export default function Home() {
         </Section>
 
         <Section title="About me" background="#ffffff">
-          <div style={aboutGrid}>
+          <div className="about-grid" style={aboutGrid}>
             <div>
               <p style={aboutHighlight}>Finance background. Technology mindset. Business-first approach.</p>
               <p style={aboutText}>My background began in finance and accounting, which naturally led me into ERP and business systems.</p>
@@ -139,17 +330,6 @@ export default function Home() {
               <p style={aboutText}>This website is where I document projects, ideas, experiments and things I’m learning along the way.</p>
               <Link href="/about" style={inlineLink}>More about me →</Link>
             </div>
-            <PersonalBranding
-              name="Akshay Gatkal"
-              tagline="I work at the intersection of Finance, ERP, AI & Automation."
-              organization="Sr. Business Analyst at Advaiya Solutions, Inc."
-              organizationLink="https://www.linkedin.com/company/advaiya-inc/posts/?feedView=all"
-              email="akshaytax2014@gmail.com"
-              photoUrl="https://media.licdn.com/dms/image/v2/D4D35AQGMXgO4FLuqpw/profile-framedphoto-shrink_400_400/B4DaC6jlxoHsAY-/0/1789836287568?e=1790442000&v=beta&t=kVijMSx10niHuV-l-VUG8ojtL-LhYioLV5Xhlw1fqaE"
-              linkedin="https://www.linkedin.com/in/akshaygatkal/"
-              github="https://github.com/akshaygatkal"
-              website="https://marathifinancial.com"
-            />
           </div>
         </Section>
 
@@ -225,6 +405,7 @@ const heroGrid: React.CSSProperties = {
   gap: "4rem",
   alignItems: "center",
   maxWidth: "1120px",
+  position: "relative",
 };
 
 const eyebrowStyle: React.CSSProperties = {
@@ -257,11 +438,6 @@ const buttonRow: React.CSSProperties = { display: "flex", flexWrap: "wrap", gap:
 const primaryButton: React.CSSProperties = { display: "inline-flex", alignItems: "center", gap: ".55rem", background: "#0E4D92", color: "#fff", padding: ".8rem 1.1rem", borderRadius: "7px", textDecoration: "none", fontWeight: 700 };
 const secondaryButton: React.CSSProperties = { display: "inline-flex", alignItems: "center", gap: ".55rem", color: "#0E4D92", border: "1px solid #cbd5e1", padding: ".8rem 1.1rem", borderRadius: "7px", textDecoration: "none", fontWeight: 700, background: "#fff" };
 const locationLine: React.CSSProperties = { color: "#6b7280", fontSize: ".85rem", marginTop: "2rem" };
-const heroPanel: React.CSSProperties = { borderLeft: "3px solid #0E4D92", background: "#f8fafc", padding: "2rem", minHeight: "260px", display: "flex", flexDirection: "column", justifyContent: "center" };
-const panelLabel: React.CSSProperties = { color: "#6b7280", textTransform: "uppercase", letterSpacing: ".12em", fontSize: ".7rem", fontWeight: 700, margin: "0 0 1.3rem" };
-const panelStatement: React.CSSProperties = { color: "#111827", fontFamily: "Georgia, serif", fontSize: "1.45rem", lineHeight: 1.35, margin: 0 };
-const panelRule: React.CSSProperties = { width: "42px", borderTop: "2px solid #0E4D92", margin: "1.5rem 0" };
-const panelMeta: React.CSSProperties = { color: "#6b7280", fontSize: ".9rem", lineHeight: 1.9, margin: 0 };
 const currentlySection: React.CSSProperties = { background: "#f8fafc", borderBottom: "1px solid #e5e7eb", padding: "1.5rem 1rem" };
 const currentlyGrid: React.CSSProperties = { display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(180px, 1fr))", gap: "2rem", marginTop: "1rem" };
 const smallTitle: React.CSSProperties = { color: "#111827", fontSize: ".95rem" };
@@ -277,7 +453,7 @@ const principlesGrid: React.CSSProperties = { display: "grid", gridTemplateColum
 const principleCard: React.CSSProperties = { borderTop: "2px solid #0E4D92", paddingTop: "1rem" };
 const principleMark: React.CSSProperties = { color: "#0E4D92", fontSize: "1.5rem" };
 const principleTitle: React.CSSProperties = { color: "#111827", fontSize: "1.1rem", margin: ".6rem 0 0" };
-const aboutGrid: React.CSSProperties = { display: "grid", gridTemplateColumns: "minmax(0, 1fr) minmax(300px, 1fr)", gap: "3rem", alignItems: "start" };
+const aboutGrid: React.CSSProperties = { display: "block", width: "100%" };
 const aboutHighlight: React.CSSProperties = { color: "#0E4D92", fontWeight: 700, lineHeight: 1.6, marginTop: 0 };
 const aboutText: React.CSSProperties = { color: "#4b5563", lineHeight: 1.8, maxWidth: "600px" };
 const inlineLink: React.CSSProperties = { color: "#0E4D92", fontWeight: 700, textDecoration: "none" };
